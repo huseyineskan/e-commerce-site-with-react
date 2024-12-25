@@ -39,12 +39,3 @@
   animation: fadeEffect 300ms;
   cursor: pointer;
 }
-
-@keyframes fadeEffect {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
