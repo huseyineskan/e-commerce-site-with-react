@@ -1,8 +1,15 @@
-# React + Vite
+# E-Commerce Site With React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I'm building an e-commerce site with React. I'll build this e-commerce site using the following packages and practice with them.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Light/Dark mode
+
+## Packages
+
+- React icons
+- Redux Toolkit
+- React Router Dom
+- Axios
+- Material UI (mui)

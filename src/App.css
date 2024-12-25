@@ -1,0 +1,50 @@
+* {
+  font-family: "Manrope", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fcfdfd;
+}
+
+.dark {
+  background-color: #2d3436;
+  color: #fff;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ffd3bc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+input:focus {
+  outline: none;
+  background-color: #f8f3f0;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #69bac9;
+  color: #fff;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
