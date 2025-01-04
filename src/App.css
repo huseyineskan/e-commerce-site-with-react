@@ -6,13 +6,13 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fcfdfd;
-  transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .dark {
   background-color: #2d3436;
   color: #fff;
-  transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 input {
@@ -49,6 +49,15 @@ button {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
 }
 
 @keyframes fadeEffect {
