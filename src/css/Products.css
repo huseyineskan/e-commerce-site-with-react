@@ -81,6 +81,16 @@
   border-radius: 5px;
 }
 
+.load-more-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/* DARK */
+
 .dark .product-price {
   color: #fff;
 }
