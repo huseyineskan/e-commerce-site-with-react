@@ -1,7 +1,12 @@
 import React from "react";
+import Breadcrumb from "../components/Breadcrumb";
 
 function Contact() {
-  return <div>Contact</div>;
+  return (
+    <div>
+      <Breadcrumb title={Contact.name} />
+    </div>
+  );
 }
 
 export default Contact;

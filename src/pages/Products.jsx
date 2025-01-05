@@ -1,10 +1,11 @@
 import React from "react";
 import ProductList from "../components/ProductList";
+import Breadcrumb from "../components/Breadcrumb";
 
 function Products() {
   return (
     <div>
-      <h1>Products Page</h1>
+      <Breadcrumb title={Products.name} />
       <ProductList />
     </div>
   );

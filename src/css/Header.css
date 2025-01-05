@@ -69,3 +69,27 @@ nav a:hover {
   animation: fadeEffect 300ms;
   cursor: pointer;
 }
+
+/* DARK */
+.dark .header {
+  background-color: #242727;
+  color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  border: 2px solid #333;
+}
+
+.dark .logo {
+  color: #fff;
+}
+
+.dark nav a {
+  color: #fff;
+}
+
+.dark .icon {
+  color: #fff;
+}
+
+.dark nav a:hover {
+  color: #333;
+}

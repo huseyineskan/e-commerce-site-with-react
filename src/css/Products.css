@@ -19,6 +19,7 @@
   transition: all 0.3s ease;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
 
 .product:hover {
@@ -78,4 +79,8 @@
   font-size: 0.7rem;
   font-weight: 500;
   border-radius: 5px;
+}
+
+.dark .product-price {
+  color: #fff;
 }
