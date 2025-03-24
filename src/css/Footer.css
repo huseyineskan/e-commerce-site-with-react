@@ -1,0 +1,30 @@
+footer {
+  background-image: linear-gradient(transparent, #e77b00);
+  color: white;
+  margin: 100px 0 0 0;
+  text-align: center;
+  padding-top: 100px;
+}
+
+footer h3 {
+  font-size: 2rem;
+  margin: 0 0 20px;
+}
+
+.footer-socials a {
+  margin: 0 1rem;
+}
+
+.footer-socials .icon {
+  transition: 300ms ease;
+  color: white;
+}
+
+.footer-socials a:hover .icon {
+  color: #333;
+}
+
+.copyright {
+  margin: 100px 0 0 0;
+  padding-bottom: 20px;
+}

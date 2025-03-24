@@ -2,6 +2,7 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "../css/Slider.css";
+import BestSeller from "../components/BestSeller";
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function Home() {
           <p className="legend">Legend 2</p>
         </div>
       </Carousel>
+      <BestSeller />
     </div>
   );
 }

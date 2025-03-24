@@ -5,6 +5,7 @@ import Products from "./pages/Products";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
       </PageContainer>
+      <Footer />
     </BrowserRouter>
   );
 }

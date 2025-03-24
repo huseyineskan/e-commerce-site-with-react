@@ -1,7 +1,6 @@
 import React from "react";
 import "../css/Header.css";
 import { SlBasket } from "react-icons/sl";
-
 import { CiLight } from "react-icons/ci";
 import { CiCloudMoon } from "react-icons/ci";
 import { Link } from "react-router-dom";
