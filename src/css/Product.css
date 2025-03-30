@@ -10,14 +10,15 @@
 }
 
 .single-product .product-img {
-  min-height: 500px;
+  width: 100%;
+  height: max-content;
   text-align: center;
   position: relative;
 }
 
 .single-product .product-img img {
-  width: 70%;
-  height: 70%;
+  width: 60%;
+  height: 60%;
   object-fit: scale-down;
   animation: fadeEffect 700ms ease-in-out forwards;
 }

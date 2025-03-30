@@ -4,7 +4,7 @@ import { useParams } from "react-router";
 import "../css/Product.css";
 import { getSingleProduct } from "../redux/slices/productSlice";
 
-function ProductDetails() {
+function Product() {
   const dispatch = useDispatch();
   const { product } = useSelector((state) => state.product);
   const { id } = useParams();
@@ -33,4 +33,4 @@ function ProductDetails() {
   );
 }
 
-export default ProductDetails;
+export default Product;

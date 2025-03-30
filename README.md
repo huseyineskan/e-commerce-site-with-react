@@ -11,5 +11,4 @@ I'm building an e-commerce site with React. I'll build this e-commerce site usin
 - React icons
 - Redux Toolkit
 - React Router Dom
-- Axios
 - Material UI (mui)
