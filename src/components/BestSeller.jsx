@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getAllProducts } from "../redux/slices/productsSlice";
 import "../css/BestSeller.css";
+import { Link } from "react-router";
 
 function BestSeller() {
   const dispatch = useDispatch();
@@ -24,15 +25,17 @@ function BestSeller() {
           <h1>Loading...</h1>
         ) : (
           products.products.slice(0, visibleCount).map((product) => (
-            <div className="product" key={product.id}>
-              <img
-                className="product-image"
-                src={product.image}
-                alt={product.title}
-              />
-              <p className="product-price">${product.price}</p>
-              <span className="product-category">{product.category}</span>
-            </div>
+            <Link to={{ pathname: "/product/" + product.id }} key={product.id}>
+              <div className="product">
+                <img
+                  className="product-image"
+                  src={product.image}
+                  alt={product.title}
+                />
+                <p className="product-price">${product.price}</p>
+                <span className="product-category">{product.category}</span>
+              </div>
+            </Link>
           ))
         )}
       </div>

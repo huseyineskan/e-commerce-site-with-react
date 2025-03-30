@@ -17,7 +17,7 @@ function Header() {
     <div className="header">
       <div className="header-top">
         <a href="/" className="logo">
-          <img src="./src/images/logo.png" alt="Logo" />
+          <img src="../src/images/logo.png" alt="Logo" />
           <div className="logo-text">
             <p>E-Commerce</p>
             <span>Super Prices</span>

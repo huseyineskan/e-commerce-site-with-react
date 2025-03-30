@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getAllProducts } from "../redux/slices/productsSlice";
+import { Link } from "react-router";
 import "../css/Products.css";
 
 function ProductList() {
@@ -23,16 +24,18 @@ function ProductList() {
           <h1>Loading...</h1>
         ) : (
           products.products.slice(0, visibleCount).map((product) => (
-            <div className="product" key={product.id}>
-              <img
-                className="product-image"
-                src={product.image}
-                alt={product.title}
-              />
-              <h3 className="product-title">{product.title}</h3>
-              <p className="product-price">${product.price}</p>
-              <span className="product-category">{product.category}</span>
-            </div>
+            <Link to={{ pathname: "/product/" + product.id }} key={product.id}>
+              <div className="product">
+                <img
+                  className="product-image"
+                  src={product.image}
+                  alt={product.title}
+                />
+                <h3 className="product-title">{product.title}</h3>
+                <p className="product-price">${product.price}</p>
+                <span className="product-category">{product.category}</span>
+              </div>
+            </Link>
           ))
         )}
       </div>

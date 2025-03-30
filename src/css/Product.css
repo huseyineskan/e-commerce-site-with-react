@@ -1,0 +1,75 @@
+.single-product {
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-product > div {
+  min-width: 48%;
+  width: 48%;
+  max-width: 48%;
+}
+
+.single-product .product-img {
+  min-height: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.single-product .product-img img {
+  width: 70%;
+  height: 70%;
+  object-fit: scale-down;
+  animation: fadeEffect 700ms ease-in-out forwards;
+}
+
+.single-product .product-details {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 20px;
+  animation: fadeEffect 500ms ease-in-out forwards;
+}
+
+.single-product .product-details h1 {
+  font-size: 1.3rem;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.product-price {
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.buttons button {
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 2px solid #fff;
+  transition: 300ms ease;
+}
+
+.whatsapp {
+  background-image: linear-gradient(45deg, #075e54, #128c7e, #25d366);
+}
+
+.add-to-cart {
+  background-image: linear-gradient(45deg, #b71540, #eb2f06, #e55039);
+}
+
+.whatsapp:hover {
+  border-color: #075e54;
+}
+
+.add-to-cart:hover {
+  border-color: #b71540;
+}
+
+/* DARK */
+
+.dark .single-product .product-details {
+  background-color: #242727;
+}
