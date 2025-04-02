@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router";
 import "../css/Product.css";
 import { getSingleProduct } from "../redux/slices/productSlice";
+import { addToCart } from "../redux/slices/cartSlice";
 
 function Product() {
   const dispatch = useDispatch();
@@ -26,7 +27,12 @@ function Product() {
         <span>{product.description}</span>
         <div className="buttons">
           <button className="whatsapp">Order from whatsapp</button>
-          <button className="add-to-cart">Add Basket</button>
+          <button
+            className="add-to-cart"
+            onClick={() => dispatch(addToCart(product))}
+          >
+            Add Basket
+          </button>
         </div>
       </div>
     </div>

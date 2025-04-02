@@ -95,6 +95,17 @@
   font-weight: bold;
 }
 
+.addToCartIcon {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+.addToCartIcon:hover {
+  color: #fc8d52;
+}
+
 /* DARK */
 
 .dark .product-price {

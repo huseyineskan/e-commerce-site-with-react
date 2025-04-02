@@ -71,8 +71,33 @@ nav a:hover {
   transition: 300ms ease;
 }
 
-.header .icon:hover {
+.header .icon:hover,
+#cart:hover span {
   color: #fc8d52 !important;
+}
+
+#cart {
+  position: relative;
+}
+
+#cart .icon {
+  position: inherit;
+  z-index: 99 !important;
+}
+
+#cart span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 20px;
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  font-size: 11px;
+  font-weight: bold;
+  transition: 300ms ease;
 }
 
 /* DARK */

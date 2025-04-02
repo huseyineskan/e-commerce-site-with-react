@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getAllProducts } from "../redux/slices/productsSlice";
 import { Link } from "react-router";
+import { FaCartPlus } from "react-icons/fa";
+
 import "../css/Products.css";
 
 function ProductList() {
@@ -34,6 +36,7 @@ function ProductList() {
                 <h3 className="product-title">{product.title}</h3>
                 <p className="product-price">${product.price}</p>
                 <span className="product-category">{product.category}</span>
+                <FaCartPlus className="addToCartIcon" />
               </div>
             </Link>
           ))
