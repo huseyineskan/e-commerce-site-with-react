@@ -5,7 +5,7 @@ import { SlBasket } from "react-icons/sl";
 import { CiLight } from "react-icons/ci";
 import { CiCloudMoon } from "react-icons/ci";
 import { Link } from "react-router-dom";
-import { removeFromCart, clearCart } from "../redux/slices/cartSlice";
+import Basket from "./Basket";
 
 function Header() {
   const [theme, setTheme] = React.useState("light");
@@ -52,7 +52,8 @@ function Header() {
 
           <div id="cart">
             <SlBasket className="icon" />
-            <span>{cart.totalQuantity}</span>
+            <span className="cart-total-quantity">{cart.totalQuantity}</span>
+            <Basket />
           </div>
         </div>
       </div>

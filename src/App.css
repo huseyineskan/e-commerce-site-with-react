@@ -1,3 +1,6 @@
+:root {
+  position: relative;
+}
 * {
   font-family: "Manrope", serif;
 }

@@ -7,6 +7,9 @@
   margin-top: 30px;
   border: 2px solid #ffd3bc91;
   margin-bottom: 50px;
+  position: sticky;
+  top: 20px;
+  z-index: 2;
 }
 
 .header-top {
@@ -72,7 +75,7 @@ nav a:hover {
 }
 
 .header .icon:hover,
-#cart:hover span {
+#cart:hover .cart-total-quantity {
   color: #fc8d52 !important;
 }
 
@@ -85,7 +88,7 @@ nav a:hover {
   z-index: 99 !important;
 }
 
-#cart span {
+#cart .cart-total-quantity {
   display: flex;
   justify-content: center;
   align-items: center;
