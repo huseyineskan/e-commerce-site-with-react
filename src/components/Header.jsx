@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "../css/Header.css";
 import { SlBasket } from "react-icons/sl";
@@ -18,6 +18,17 @@ function Header() {
   // CART
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
+
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  // Sepet değiştiğinde animasyonu tetikle
+  useEffect(() => {
+    if (cart.totalQuantity > 0) {
+      setIsAnimating(true);
+      const timer = setTimeout(() => setIsAnimating(false), 500); // Animasyon süresi
+      return () => clearTimeout(timer);
+    }
+  }, [cart.totalQuantity]);
 
   return (
     <div className="header">
@@ -52,7 +63,11 @@ function Header() {
 
           <div id="cart">
             <SlBasket className="icon" />
-            <span className="cart-total-quantity">{cart.totalQuantity}</span>
+            <span
+              className={`cart-total-quantity ${isAnimating ? "animate" : ""}`}
+            >
+              {cart.totalQuantity}
+            </span>
             <Basket />
           </div>
         </div>

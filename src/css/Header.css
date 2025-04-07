@@ -103,6 +103,19 @@ nav a:hover {
   transition: 300ms ease;
 }
 
+.cart-total-quantity.animate {
+  animation: pulse 1s ease forwards;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(252, 141, 82, 1);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(252, 141, 82, 0);
+  }
+}
+
 /* DARK */
 .dark .header {
   background-color: #242727;

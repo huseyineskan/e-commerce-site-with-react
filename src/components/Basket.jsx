@@ -14,8 +14,6 @@ function Cart() {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
-  console.log(cart.items);
-
   return (
     <div id="basket">
       <ul>
