@@ -1,0 +1,45 @@
+.checkout table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.checkout td,
+.checkout th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.checkout tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.table-price {
+  width: 100px;
+}
+
+.checkout-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-buttons button {
+  transition: 300ms ease;
+}
+
+.checkout-buttons .clear-all-produts-btn {
+  background-color: #e74c3c;
+}
+
+.checkout-buttons .payment-btn {
+  background-color: green;
+}
+.checkout-buttons .clear-all-produts-btn:hover {
+  background-color: #cf200d;
+}
+
+.checkout-buttons .payment-btn:hover {
+  background-color: rgb(1, 90, 1);
+}

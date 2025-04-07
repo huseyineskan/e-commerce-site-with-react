@@ -80,6 +80,16 @@
   font-weight: bold;
 }
 
+.go-to-checkout {
+  background-color: #00d861;
+  padding: 10px 0;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  transition: 200ms ease;
+  font-weight: bold;
+}
+
 .clear-all-cart {
   background-color: #fc8d52;
   padding: 5px 0;

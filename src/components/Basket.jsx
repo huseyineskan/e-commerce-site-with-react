@@ -8,6 +8,7 @@ import {
 } from "../redux/slices/cartSlice";
 
 import "../css/Basket.css";
+import { Link } from "react-router";
 
 function Cart() {
   // CART
@@ -71,6 +72,9 @@ function Cart() {
               Total amount: <span>${cart.totalPrice.toFixed(2)}</span>
             </p>
           </div>
+          <Link to="/checkout">
+            <div className="go-to-checkout">Go to checkout</div>{" "}
+          </Link>
           <div
             className="clear-all-cart"
             onClick={() => {
