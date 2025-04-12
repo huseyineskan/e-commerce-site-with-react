@@ -1,3 +1,10 @@
+.checkout caption {
+  display: block;
+  font-weight: bold;
+  text-align: start;
+  margin-bottom: 15px;
+}
+
 .checkout table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -5,14 +12,23 @@
 }
 
 .checkout td,
-.checkout th {
-  border: 1px solid #dddddd;
+.checkout th,
+.checkout tr {
+  border: 1px solid #b3b3b3;
   text-align: left;
   padding: 8px;
 }
 
 .checkout tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #e9e9e9;
+}
+
+.checkout tfoot tr {
+  background-color: #a0a0a0;
+  font-weight: bold;
+}
+.checkout tfoot tr td {
+  height: 50px;
 }
 
 .table-price {

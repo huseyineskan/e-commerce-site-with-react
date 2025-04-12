@@ -28,7 +28,7 @@ function ProductList() {
           <h1>Loading...</h1>
         ) : (
           products.products.slice(0, visibleCount).map((product) => (
-            <div className="product">
+            <div className="product" key={product.id}>
               <Link
                 to={{ pathname: "/product/" + product.id }}
                 key={product.id}

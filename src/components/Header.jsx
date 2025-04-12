@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import "../css/Header.css";
 import { SlBasket } from "react-icons/sl";
 import { CiLight } from "react-icons/ci";
@@ -17,7 +17,6 @@ function Header() {
 
   // CART
   const cart = useSelector((state) => state.cart);
-  const dispatch = useDispatch();
 
   const [isAnimating, setIsAnimating] = useState(false);
 
