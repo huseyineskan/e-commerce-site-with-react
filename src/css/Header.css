@@ -139,3 +139,77 @@ nav a:hover {
 .dark nav a:hover {
   color: #333;
 }
+
+.mobile-icons {
+  display: none;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .header {
+    border-radius: 30px;
+    /* position: inherit; */
+  }
+  .header-top {
+    flex-direction: column;
+  }
+
+  .header-top > a {
+    align-self: flex-start;
+  }
+
+  .header-top .search {
+    width: 100%;
+    justify-content: end;
+  }
+
+  .header-top .search input {
+    flex: auto;
+  }
+
+  .header-top .search > svg {
+    align-items: flex-end;
+  }
+
+  .mobile-icons {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    cursor: pointer;
+    z-index: 99999999;
+  }
+  .mobile-icons svg {
+    font-size: 30px;
+  }
+
+  #primary-menu {
+    flex-direction: column;
+    position: fixed;
+    background-color: #686666;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: 99999;
+    font-size: 30px;
+    display: none;
+  }
+
+  nav a {
+    color: #fff !important;
+  }
+
+  nav a:hover {
+    background-color: #ce4800;
+  }
+
+  nav ul li:not(:last-child) {
+    margin: 0 0 30px;
+  }
+
+  #primary-menu.active {
+    display: flex;
+  }
+}

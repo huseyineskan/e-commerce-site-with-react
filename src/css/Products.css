@@ -23,6 +23,13 @@
   animation: fadeEffect 800ms ease-in-out forwards;
 }
 
+@media screen and (max-width: 768px) {
+  .product {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
 .product:hover {
   transform: scale(1.02);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);

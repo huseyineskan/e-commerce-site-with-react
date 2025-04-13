@@ -2,22 +2,30 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import "../css/Header.css";
 import { SlBasket } from "react-icons/sl";
-import { CiLight } from "react-icons/ci";
-import { CiCloudMoon } from "react-icons/ci";
+import { CiLight, CiCloudMoon, CiMenuFries } from "react-icons/ci";
+import { MdClose } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Basket from "./Basket";
 
 function Header() {
   const [theme, setTheme] = React.useState("light");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState("");
 
   const changeTheme = () => {
     const body = document.querySelector("body");
     body.classList.toggle("dark");
   };
 
+  function mobileMenu() {
+    if (mobileMenuOpen == "active") {
+      setMobileMenuOpen("");
+    } else {
+      setMobileMenuOpen("active");
+    }
+  }
+
   // CART
   const cart = useSelector((state) => state.cart);
-
   const [isAnimating, setIsAnimating] = useState(false);
 
   // Sepet değiştiğinde animasyonu tetikle
@@ -72,18 +80,29 @@ function Header() {
         </div>
       </div>
       <nav>
-        <ul>
+        <div className="mobile-icons" onClick={() => mobileMenu()}>
+          <CiMenuFries />
+        </div>
+        <ul id="primary-menu" className={mobileMenuOpen}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={() => mobileMenu()}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/products">Products</Link>
+            <Link to="/products" onClick={() => mobileMenu()}>
+              Products
+            </Link>
           </li>
           <li>
-            <Link to="/about-us">About Us</Link>
+            <Link to="/about-us" onClick={() => mobileMenu()}>
+              About Us
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" onClick={() => mobileMenu()}>
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>

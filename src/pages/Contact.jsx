@@ -10,7 +10,7 @@ function Contact() {
         <div className="col">
           <p>It is very easy to reach us!</p>
           {/* Contact Form */}
-          <form className="contact-form">
+          <form className="contact-form" action="#">
             <div className="form-group">
               <input
                 placeholder="Name"

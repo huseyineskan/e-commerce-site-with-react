@@ -4,11 +4,14 @@ I'm building an e-commerce site with React. I'll build this e-commerce site usin
 
 ## Features
 
+- Main slider
+- Adding adn removing products from the cart
 - Light/Dark mode
 
 ## Packages
 
-- React icons
 - Redux Toolkit
-- React Router Dom
+- React Router
+- React icons
 - Material UI (mui)
+- React responsive carousel

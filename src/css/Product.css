@@ -74,3 +74,19 @@
 .dark .single-product .product-details {
   background-color: #242727;
 }
+
+@media screen and (max-width: 768px) {
+  .single-product {
+    flex-direction: column;
+  }
+
+  .single-product > div {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .product-details {
+    padding: 0 !important;
+  }
+}

@@ -2,3 +2,7 @@
   border-radius: 30px !important;
   overflow: hidden;
 }
+
+.carousel.carousel-slider .control-arrow {
+  z-index: 1 !important;
+}
