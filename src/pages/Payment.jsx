@@ -5,6 +5,13 @@ import Cards from "react-credit-cards-2";
 import "react-credit-cards-2/dist/es/styles-compiled.css";
 
 // Card information verification will be added.
+// Payment will check.
+
+function handleSubmit(e) {
+  e.preventDefault();
+  console.log("Payment will control.");
+}
+
 function Payment() {
   const [state, setState] = useState({
     number: "",
@@ -34,7 +41,7 @@ function Payment() {
           name={state.name}
           focused={state.focus}
         />
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="col">
               <input
@@ -85,6 +92,9 @@ function Payment() {
                 onFocus={handleInputFocus}
               />
             </div>
+          </div>
+          <div className="row">
+            <button className="pay-btn">Pay</button>
           </div>
         </form>
       </div>

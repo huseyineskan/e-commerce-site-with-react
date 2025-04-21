@@ -25,6 +25,20 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.payment .pay-btn {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #44bd32;
+  font-weight: bold;
+  padding: 7px 0;
+  font-size: 15px;
+  transition: 300ms ease;
+}
+
+.payment .pay-btn:hover {
+  background-color: #1ba106;
+}
+
 @media screen and (max-width: 768px) {
   .cart-div {
     flex-direction: column;
