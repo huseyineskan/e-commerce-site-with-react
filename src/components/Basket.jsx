@@ -53,7 +53,7 @@ function Cart() {
                   {item.price} x {item.quantity}
                 </span>
                 <span className="basket-product-total-price">
-                  ${Number(item.price) * Number(item.quantity)}
+                  ${(Number(item.price) * Number(item.quantity)).toFixed(2)}
                 </span>
               </div>
             </li>
@@ -72,8 +72,8 @@ function Cart() {
               Total amount: <span>${cart.totalPrice.toFixed(2)}</span>
             </p>
           </div>
-          <Link to="/checkout">
-            <div className="go-to-checkout">Go to checkout</div>{" "}
+          <Link to="/cart">
+            <div className="go-to-cart">Go to Cart</div>{" "}
           </Link>
           <div
             className="clear-all-cart"

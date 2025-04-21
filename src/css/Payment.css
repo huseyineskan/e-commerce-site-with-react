@@ -1,0 +1,32 @@
+.cart-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-div > * {
+  flex: 1;
+}
+
+.row {
+  justify-self: center;
+  max-width: 300px;
+  width: 300px;
+}
+
+.cart-div form input {
+  width: 100%;
+  margin: 10px 0 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .cart-div {
+    flex-direction: column;
+  }
+}

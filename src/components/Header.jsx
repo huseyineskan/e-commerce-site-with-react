@@ -3,13 +3,13 @@ import { useSelector } from "react-redux";
 import "../css/Header.css";
 import { SlBasket } from "react-icons/sl";
 import { CiLight, CiCloudMoon, CiMenuFries } from "react-icons/ci";
-import { MdClose } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Basket from "./Basket";
 
 function Header() {
   const [theme, setTheme] = React.useState("light");
   const [mobileMenuOpen, setMobileMenuOpen] = useState("");
+  const navigate = useNavigate();
 
   const changeTheme = () => {
     const body = document.querySelector("body");
@@ -40,13 +40,13 @@ function Header() {
   return (
     <div className="header">
       <div className="header-top">
-        <a href="/" className="logo">
+        <Link to="/" className="logo">
           <img src="../src/images/logo.png" alt="Logo" />
           <div className="logo-text">
             <p>E-Commerce</p>
             <span>Super Prices</span>
           </div>
-        </a>
+        </Link>
         <div className="search flex-row">
           <input type="text" placeholder="Search" />
 

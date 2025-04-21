@@ -80,7 +80,7 @@
   font-weight: bold;
 }
 
-.go-to-checkout {
+.go-to-cart {
   background-color: #00d861;
   padding: 10px 0;
   font-size: 13px;
@@ -88,6 +88,11 @@
   cursor: pointer;
   transition: 200ms ease;
   font-weight: bold;
+}
+
+.go-to-cart:hover {
+  background-color: #02853d;
+  color: #fff;
 }
 
 .clear-all-cart {
@@ -101,6 +106,7 @@
 
 .clear-all-cart:hover {
   background-color: #fc5c06;
+  color: #fff;
 }
 
 .cart-is-empty {

@@ -43,7 +43,7 @@ function Product() {
             className="add-to-cart"
             onClick={() => dispatch(addToCart(product))}
           >
-            Add Basket
+            Add to Cart
           </button>
         </div>
       </div>
